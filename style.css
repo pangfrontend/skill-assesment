@@ -4,6 +4,7 @@
 
 body {
     padding: 0 20px;
+    margin: 0;
 }
 
 .container {
@@ -56,6 +57,85 @@ body {
     margin-left: 0;
 }
 
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.rectangle {
+    background: #D9D9D9;
+}
+
+.rectangle.large {
+    width: 335px;
+    height: 200px;
+    padding: 0px;
+    margin-top: 96px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.rectangle.medium {
+    width: 335px;
+    height: 150px;
+    margin: 20px;
+}   
+
+.rectangle.small {
+    width: 240px;
+    height: 32px;
+    margin: 30px auto;
+}
+
+.content-box {
+    background: #D9D9D9;
+    width: 335px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.content-box.one {
+    margin-top: 0;
+}
+
+.content {
+    background: #000;
+    display: block;
+}
+
+.content.one {
+    width: 295px;
+    height: 150px;
+    margin: 20px 20px 0 20px;
+}
+
+.content.two {
+    width: 200px;
+    height: 40px;
+    margin: 12px 115px 12px 20px;
+}
+
+.content.three {
+    width: 160px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+.content.four {
+    width: 100px;
+    height: 20px;
+    margin-top: 26px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
 /* FOR TABLET */
 @media screen and (min-width: 800px) {
     .site-header {
@@ -94,7 +174,7 @@ body {
     }
 
     .site-nav {
-        margin-right: 20px;
+        
     }
 
     .site-header {
