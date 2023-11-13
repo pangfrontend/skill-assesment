@@ -101,6 +101,10 @@ body {
     padding: 0;
 }
 
+.content-box:last-child {
+    margin-bottom: 80px;
+}
+
 .content-box.one {
     margin-top: 0;
 }
@@ -138,12 +142,14 @@ body {
 
 /* FOR TABLET */
 @media screen and (min-width: 800px) {
+    body {
+        padding: 0 40px;
+    }
+    
     .site-header {
         padding: 32px 40px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
+
     .site-nav {
         display: flex;
         justify-content: flex-end;
@@ -155,30 +161,102 @@ body {
         display: none;
     }
 
-    
-
     .header-box {
         width: 200px;
         height: 60px;
-        padding: 32px 40px;
+    }
+
+    .container-2 {
+        margin-top: 124px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+
+    .rectangle.large {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .rectangle.medium {
+        align-self: flex-start;
+        margin-right: 0;
+    }
+
+    .rectangle.small {
+        margin-right: 46px;
+        margin-top: -32px;
+    }
+
+    .container-3 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+
+    .content-box.two {
+        margin: 0;
     }
 } 
 
 /* FOR DESKTOP */
 @media screen and (min-width: 1440px) {
 
-    .header-box {
-        width: 200px;
-        height: 60px;
+    body {
         padding: 0;
     }
 
-    .site-nav {
-        
+    .header-box {
+        width: 200px;
+        height: 60px;
     }
 
     .site-header {
-        width: 100%;
         padding: 32px 80px;
+    }
+
+    .container-3 {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .rectangle.large {
+        width: 733px;
+        height: 400px;
+        margin-top: 60px;
+        margin-right: 32px;
+        margin-left: 80px;
+    }
+
+    .rectangle.medium {
+        width: 518px;
+        height: 320px;
+        margin: 0;
+        margin-top: 100px;
+        margin-right: 77px;
+    }
+
+    .rectangle.small {
+        margin: 100px auto 80px auto;
+    }
+
+    .container-3 {
+        margin: 0 80px 80px 80px;
+    }
+
+    .content-box {
+        width: 296px;
+        height: 320px;
+        margin: 0;
+    }
+
+    .content.one {
+        width: 256px;
+        height: 150px;
+    }
+
+    .content.two {
+        margin: 12px 76px 12px 20px;
     }
 }
